@@ -1,0 +1,17 @@
+<div class="login-container">
+  <h1>Login</h1>
+  <form (ngSubmit)="onSubmit($event)">
+    <label for="phone-input">Número de celular:</label>
+    <input
+      id="phone-input"
+      type="text"
+      [(ngModel)]="phoneNumber"
+      name="phoneNumber"
+      placeholder="Ingrese su número"
+      required
+    />
+    <button type="submit" class="login-button">Ingresar</button>
+  </form>
+  <p *ngIf="errorMessage" class="error-message">{{ errorMessage }}</p>
+</div>
+
