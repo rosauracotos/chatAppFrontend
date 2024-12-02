@@ -13,14 +13,14 @@ export class ApiBackendService {
     const headers = new HttpHeaders({
       'Content-Type': 'application/json'
     });
-    return this.http.get<any>(`chatappbackend-production-52f3.up.railway.app/api/persona/validarcel/`+ celular, { headers: headers });
+    return this.http.get<any>(`https://chatappbackend-production-52f3.up.railway.app/api/persona/validarcel/`+ celular, { headers: headers });
   }
 
   obtenerContactos(idpersona: string | number):Observable<any> {
     const headers = new HttpHeaders({
       'Content-Type': 'application/json'
     });
-    return this.http.get<any>(`chatappbackend-production-52f3.up.railway.app/api/persona/listarContactos/`+ idpersona, { headers: headers });
+    return this.http.get<any>(`https://chatappbackend-production-52f3.up.railway.app/api/persona/listarContactos/`+ idpersona, { headers: headers });
   }
 
   obtenerSala(celular1: string, celular2: string):Observable<any> {
@@ -31,7 +31,7 @@ export class ApiBackendService {
       celular1: celular1,
       celular2: celular2
     };
-    return this.http.post<any>(`chatappbackend-production-52f3.up.railway.app/api/sala/obtenerSala`,body, { headers: headers });
+    return this.http.post<any>(`https://chatappbackend-production-52f3.up.railway.app/api/sala/obtenerSala`,body, { headers: headers });
   }
 
   obtenerChat(salaId: string, celular: string):Observable<any> {
@@ -42,7 +42,7 @@ export class ApiBackendService {
       salaId: salaId,
       celular: celular
     };
-    return this.http.post<any>(`chatappbackend-production-52f3.up.railway.app/api/mensaje/obtenerChat`,body, { headers: headers });
+    return this.http.post<any>(`https://chatappbackend-production-52f3.up.railway.app/api/mensaje/obtenerChat`,body, { headers: headers });
   }
 
 }
