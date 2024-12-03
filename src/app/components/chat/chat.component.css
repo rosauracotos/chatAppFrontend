@@ -2,7 +2,7 @@
   display: flex;
   height: 100vh;
   font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
+  background-color: #F7D1CD; /* Pale Dogwood */
   padding: 15px;
   gap: 10px; /* Espacio entre contactos y chat */
   box-sizing: border-box;
@@ -12,10 +12,10 @@
 /* Estilo de la lista de contactos */
 .contacts_section {
   width: 30%;
-  border-right: 1px solid #ccc;
+  border-right: 1px solid #E8C2CA; /* Fairy Tale */
   display: flex;
   flex-direction: column;
-  background: #ffffff;
+  background: #FFFFFF;
   border-radius: 8px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
@@ -26,7 +26,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #075e54;
+  background: #B392AC; /* Rose Quartz */
   color: white;
   font-size: 18px;
 }
@@ -35,7 +35,6 @@
   list-style: none;
   margin: 0;
   padding: 0;
-
 }
 
 .contacts_list li {
@@ -43,23 +42,23 @@
   align-items: center;
   padding: 12px;
   cursor: pointer;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #D1B3C4; /* Thistle */
   transition: background-color 0.2s, transform 0.1s;
 }
 
 .contacts_list li.active {
-  background: #e0f7fa;
+  background: #E8C2CA; /* Fairy Tale */
 }
 
 .contacts_list li:hover {
-  background: #f0f0f0;
+  background: #F7D1CD; /* Pale Dogwood */
   transform: scale(1.01);
 }
 
 .contacts_list .avatar {
   width: 40px;
   height: 40px;
-  background: #ccc;
+  background: #735D78; /* Chinese Violet */
   border-radius: 50%;
   margin-right: 12px;
 }
@@ -83,7 +82,7 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  background: #ffffff;
+  background: #FFFFFF;
   border-radius: 8px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -98,7 +97,7 @@
 
 .chat_window .top_menu {
   padding: 10px;
-  background: #075e54;
+  background: #B392AC; /* Rose Quartz */
   color: white;
   display: flex;
   align-items: center;
@@ -111,7 +110,7 @@
   list-style: none;
   padding: 10px;
   overflow-y: auto;
-  background: #f9f9f9;
+  background: #F7D1CD; /* Pale Dogwood */
   border-radius: 8px;
   box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.05);
 }
@@ -132,12 +131,12 @@
 .chat_window .message .text_wrapper {
   max-width: 60%;
   padding: 10px;
-  background: #dcf8c6;
+  background: #D1B3C4; /* Thistle */
   border-radius: 8px;
 }
 
 .chat_window .message.right .text_wrapper {
-  background: #a48407;
+  background: #B392AC; /* Rose Quartz */
   color: white;
 }
 
@@ -145,8 +144,8 @@
   padding: 10px;
   display: flex;
   align-items: center;
-  border-top: 1px solid #ccc;
-  background-color: #ffffff;
+  border-top: 1px solid #E8C2CA; /* Fairy Tale */
+  background-color: #FFFFFF;
   border-radius: 8px;
 }
 
@@ -157,13 +156,13 @@
 .message_input {
   width: 100%;
   padding: 20px;
-  border: 1px solid #ccc;
+  border: 1px solid #E8C2CA;
   border-radius: 5px;
   font-size: 18px;
 }
 
 .btn.btn-primary {
-  background: #075e54;
+  background: #735D78; /* Chinese Violet */
   color: white;
   border: none;
   padding: 10px 15px;
@@ -173,7 +172,7 @@
 }
 
 .btn.btn-primary:hover {
-  background: #b752d3;
+  background: #B392AC; /* Rose Quartz */
 }
 
 /* Título del usuario */
@@ -182,8 +181,8 @@
   align-items: center;
   justify-content: space-between;
   padding: 10px 15px;
-  background-color: #ffffff;
-  color: #871a93;
+  background-color: #FFFFFF;
+  color: #735D78; /* Chinese Violet */
   font-weight: bold;
   border-radius: 8px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
