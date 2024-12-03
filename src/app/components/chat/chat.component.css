@@ -141,12 +141,12 @@
 
 .chat_window .message.right .text_wrapper {
   background: #d564bd; /* Rose Quartz */
-  color: #2c0202;
+  color: #29bba7;
 }
 
 .chat_window .message.left .text_wrapper {
   background: #c73c59; /* Verde */
-  color: #231010; /* Blanco */
+  color: #29bba7; /* Blanco */
 }
 
 
