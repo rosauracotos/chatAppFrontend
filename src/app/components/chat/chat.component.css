@@ -2,7 +2,7 @@
   display: flex;
   height: 100vh;
   font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
+  background-color: #fdf2f8; /* Fondo rosado pastel */
   padding: 15px;
   gap: 10px; /* Espacio entre contactos y chat */
   box-sizing: border-box;
@@ -12,10 +12,10 @@
 /* Estilo de la lista de contactos */
 .contacts_section {
   width: 30%;
-  border-right: 1px solid #ccc;
+  border-right: 1px solid #fbcfe8; /* Rosa suave */
   display: flex;
   flex-direction: column;
-  background: #ffffff;
+  background: #ffe4e6; /* Fondo rosado */
   border-radius: 8px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
@@ -26,7 +26,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #075e54;
+  background: #ec4899; /* Rosa brillante */
   color: white;
   font-size: 18px;
 }
@@ -35,7 +35,6 @@
   list-style: none;
   margin: 0;
   padding: 0;
-
 }
 
 .contacts_list li {
@@ -43,23 +42,23 @@
   align-items: center;
   padding: 12px;
   cursor: pointer;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #fbcfe8; /* Rosa suave */
   transition: background-color 0.2s, transform 0.1s;
 }
 
 .contacts_list li.active {
-  background: #e0f7fa;
+  background: #f9a8d4; /* Rosa claro */
 }
 
 .contacts_list li:hover {
-  background: #f0f0f0;
+  background: #fcd8e1; /* Otro tono suave */
   transform: scale(1.01);
 }
 
 .contacts_list .avatar {
   width: 40px;
   height: 40px;
-  background: #ccc;
+  background: #f9a8d4; /* Fondo rosa */
   border-radius: 50%;
   margin-right: 12px;
 }
@@ -70,7 +69,7 @@
 
 .contacts_list .contact_name {
   font-weight: bold;
-  color: #333;
+  color: #6b7280; /* Gris oscuro */
 }
 
 .contacts_list .last_message {
@@ -98,7 +97,7 @@
 
 .chat_window .top_menu {
   padding: 10px;
-  background: #075e54;
+  background: #ec4899; /* Rosa brillante */
   color: white;
   display: flex;
   align-items: center;
@@ -111,7 +110,7 @@
   list-style: none;
   padding: 10px;
   overflow-y: auto;
-  background: #f9f9f9;
+  background: #fff1f2; /* Fondo rosado suave */
   border-radius: 8px;
   box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.05);
 }
@@ -132,12 +131,13 @@
 .chat_window .message .text_wrapper {
   max-width: 60%;
   padding: 10px;
-  background: #0f9b89;
+  background: #ec4899; /* Rosa brillante */
   border-radius: 8px;
+  color: white;
 }
 
 .chat_window .message.right .text_wrapper {
-  background: #a48407;
+  background: #d946ef; /* Rosa morado */
   color: white;
 }
 
@@ -145,8 +145,8 @@
   padding: 10px;
   display: flex;
   align-items: center;
-  border-top: 1px solid #ccc;
-  background-color: #ffffff;
+  border-top: 1px solid #fbcfe8;
+  background-color: #ffe4e6; /* Fondo suave */
   border-radius: 8px;
 }
 
@@ -156,24 +156,26 @@
 
 .message_input {
   width: 100%;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 18px;
+  padding: 15px;
+  border: 1px solid #fbcfe8; /* Borde suave */
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #ffffff;
 }
 
 .btn.btn-primary {
-  background: #075e54;
+  background: #ec4899; /* Rosa brillante */
   color: white;
   border: none;
   padding: 10px 15px;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.2s;
+  transition: background-color 0.2s, transform 0.1s;
 }
 
 .btn.btn-primary:hover {
-  background: #b752d3;
+  background: #d946ef; /* Rosa morado */
+  transform: scale(1.05);
 }
 
 /* Título del usuario */
@@ -183,7 +185,7 @@
   justify-content: space-between;
   padding: 10px 15px;
   background-color: #ffffff;
-  color: #871a93;
+  color: #ec4899; /* Rosa brillante */
   font-weight: bold;
   border-radius: 8px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
