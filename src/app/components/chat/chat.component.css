@@ -117,7 +117,9 @@
 
 .chat_window .message {
   display: flex;
-  margin-bottom: 15px;
+  padding: 20px;
+
+  margin-bottom: 20px;
 }
 
 .chat_window .message.left {
@@ -130,24 +132,24 @@
 
 .chat_window .message .text_wrapper {
   font-family: 'Roboto', sans-serif;
-  max-width: 75%; /* Aumenta el ancho máximo del mensaje */
-  padding: 20px; /* Incrementa el espacio interno */
-  font-size: 16px; /* Aumenta el tamaño de la fuente */
+  max-width: 85%; /* Aumenta el ancho máximo del mensaje */
+  padding: 25px; /* Incrementa el espacio interno */
+  font-size: 19px; /* Aumenta el tamaño de la fuente */
   border-radius: 12px; /* Suaviza más los bordes */
   line-height: 1.5; /* Mejora la legibilidad */
 }
 
 .chat_window .message.right .text_wrapper {
-  background: #B392AC; /* Rose Quartz */
-  color: white;
+  background: #d564bd; /* Rose Quartz */
+  color: #2c0202;
 }
 
 .chat_window .bottom_wrapper {
   padding: 10px;
   display: flex;
   align-items: center;
-  border-top: 1px solid #E8C2CA; /* Fairy Tale */
-  background-color: #FFFFFF;
+  border-top: 1px solid #c73c59; /* Fairy Tale */
+  background-color: #360303;
   border-radius: 8px;
 }
 
@@ -198,6 +200,13 @@
 
 }
 
+.whatsapp-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
 
 .messages .message-content {
   display: flex;
@@ -216,4 +225,3 @@
   height: 40px;
   border-radius: 50%;
 }
-
