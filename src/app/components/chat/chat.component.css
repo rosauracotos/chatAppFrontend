@@ -141,12 +141,12 @@
 
 .chat_window .message.right .text_wrapper {
   background: #d564bd; /* Rose Quartz */
-  color: #29bba7;
+  color: #e6faf7;
 }
 
 .chat_window .message.left .text_wrapper {
   background: #c73c59; /* Verde */
-  color: #29bba7; /* Blanco */
+  color: #d9f8f4; /* Blanco */
 }
 
 
@@ -231,3 +231,18 @@
   height: 40px;
   border-radius: 50%;
 }
+
+.image-container {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center;    /* Centra verticalmente */
+  height: 100vh;          /* Ajusta el alto según sea necesario */
+  width: 100%;            /* O el ancho del contenedor */
+  background-color: #f0f0f0; /* Opcional, un fondo para visualizar */
+}
+
+.image-container img {
+  max-width: 100%; /* Ajusta el tamaño de la imagen para que no desborde */
+  height: auto;    /* Mantiene la proporción */
+}
+
