@@ -132,12 +132,12 @@
 .chat_window .message .text_wrapper {
   max-width: 60%;
   padding: 10px;
-  background: #dcf8c6;
+  background: #0f9b89;
   border-radius: 8px;
 }
 
 .chat_window .message.right .text_wrapper {
-  background: #25d366;
+  background: #a48407;
   color: white;
 }
 
@@ -173,7 +173,7 @@
 }
 
 .btn.btn-primary:hover {
-  background: #056648;
+  background: #b752d3;
 }
 
 /* Título del usuario */
@@ -183,7 +183,7 @@
   justify-content: space-between;
   padding: 10px 15px;
   background-color: #ffffff;
-  color: #075E54;
+  color: #871a93;
   font-weight: bold;
   border-radius: 8px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
