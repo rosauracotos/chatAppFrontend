@@ -11,6 +11,7 @@ export class ChatService {
 
   public stompClient: any
   private messageSubject: BehaviorSubject<ChatMessage[]> = new BehaviorSubject<ChatMessage[]>([]);
+  private rooms: string[] = [];
 
   constructor() {
     this.initConnenctionSocket()
@@ -24,15 +25,19 @@ export class ChatService {
 
 
   joinRoom(roomId: string) {
-    this.stompClient.connect({}, ()=>{
-      this.stompClient.subscribe(`/topic/${roomId}`, (messages: any) => {
-        const messageContent = JSON.parse(messages.body);
-        const currentMessage = this.messageSubject.getValue();
-        currentMessage.push(messageContent);
+    if(!this.rooms.includes(roomId)){
+      this.stompClient.connect({}, ()=>{
+        this.rooms.push(roomId);
+        this.stompClient.subscribe(`/topic/${roomId}`, (messages: any) => {
+          const messageContent = JSON.parse(messages.body);
+          const currentMessage = this.messageSubject.getValue();
+          currentMessage.push(messageContent);
 
-        this.messageSubject.next(currentMessage);
+          this.messageSubject.next(currentMessage);
+        })
       })
-    })
+    }
+
   }
 
   sendMessage(roomId: string, chatMessage: ChatMessage) {
