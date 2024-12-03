@@ -36,7 +36,11 @@
       </div>
       <ul class="messages" #messagesContainer>
         <li class="message right" *ngFor="let item of messageList"
-            [ngClass]="{'left': item.message_side === 'receiver', 'right': item.message_side === 'sender'}"><div class="message-content">
+            [ngClass]="{'left': item.message_side === 'receiver', 'right': item.message_side === 'sender'}">
+          <div class="message-content">
+            <div class="message-sender" *ngIf="item.sender_name">
+              {{ item.sender_name }}
+            </div>
           <img *ngIf="item.message_side === 'receiver'" src="assets/burbuja-de-chat.png" alt="Avatar" class="message-icon-left" />
           <div class="text_wrapper">
             <div class="text">{{ item.message }}</div>
