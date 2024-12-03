@@ -248,9 +248,10 @@
 }
 
 .message-sender {
-  font-size: 11px;
-  font-weight: bold;
-  color: #8598f5;
-  margin-bottom: 5px;
+  font-size: 12px; /* Tamaño de letra */
+  font-weight: bold; /* Negrita */
+  color: #8e8efa; /* Color para el nombre */
+  margin-bottom: 5px; /* Espacio entre el nombre y el mensaje */
+  font-family: 'Courier New', Courier, monospace; /
 }
 
