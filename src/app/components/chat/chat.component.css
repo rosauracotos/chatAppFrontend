@@ -239,7 +239,7 @@
   align-items: center;    /* Centra verticalmente */
   height: 100vh;          /* Ajusta el alto según sea necesario */
   width: 100%;            /* O el ancho del contenedor */
-  background-color: #f0f0f0; /* Opcional, un fondo para visualizar */
+  background-color: #c0964a; /* Opcional, un fondo para visualizar */
 }
 
 .image-container img {
