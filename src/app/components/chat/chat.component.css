@@ -70,6 +70,7 @@
 .contacts_list .contact_name {
   font-weight: bold;
   color: #333;
+  align-items: center;
 }
 
 .contacts_list .last_message {
