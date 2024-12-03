@@ -25,8 +25,10 @@ export class ChatService {
 
 
   joinRoom(roomId: string) {
-    if(!this.rooms.includes(roomId)){
-      this.stompClient.connect({}, ()=>{
+
+    this.stompClient.connect({}, () => {
+      if (!this.rooms.includes(roomId)) {
+        console.log('si agregóooooo')
         this.rooms.push(roomId);
         this.stompClient.subscribe(`/topic/${roomId}`, (messages: any) => {
           const messageContent = JSON.parse(messages.body);
@@ -35,8 +37,11 @@ export class ChatService {
 
           this.messageSubject.next(currentMessage);
         })
-      })
-    }
+      } else {
+        console.log('no agregóoooooo')
+      }
+
+    })
 
   }
 
