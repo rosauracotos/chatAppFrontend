@@ -28,7 +28,6 @@ export class ChatService {
 
     this.stompClient.connect({}, () => {
       if (!this.rooms.includes(roomId)) {
-        console.log('si agregóooooo')
         this.rooms.push(roomId);
         this.stompClient.subscribe(`/topic/${roomId}`, (messages: any) => {
           const messageContent = JSON.parse(messages.body);

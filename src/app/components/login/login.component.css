@@ -1,53 +1,63 @@
 .login-container {
-  max-width: 300px;
+  max-width: 350px;
   margin: 50px auto;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  background-color: #f9f9f9;
+  padding: 25px;
+  border-radius: 10px;
+  background-color: #F7D1CD; /* Pale Dogwood */
   text-align: center;
   font-family: Arial, sans-serif;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
-  font-size: 24px;
-  color: #075e54;
+  font-size: 28px;
+  color: #735D78; /* Chinese Violet */
   margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 label {
   display: block;
   font-size: 14px;
-  color: #333;
+  color: #735D78; /* Chinese Violet */
   margin-bottom: 8px;
 }
 
 input {
   width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #D1B3C4; /* Thistle */
   border-radius: 5px;
-  font-size: 14px;
+  font-size: 16px;
+  background-color: #FFFFFF;
+}
+
+input:focus {
+  outline: none;
+  border-color: #B392AC; /* Rose Quartz */
+  box-shadow: 0 0 4px rgba(179, 146, 172, 0.5);
 }
 
 .login-button {
   width: 100%;
-  padding: 10px;
-  background-color: #25d366;
+  padding: 12px;
+  background-color: #E8C2CA; /* Fairy Tale */
   color: white;
   border: none;
   border-radius: 5px;
   font-size: 16px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .login-button:hover {
-  background-color: #1bc159;
+  background-color: #B392AC; /* Rose Quartz */
 }
 
 .error-message {
-  color: red;
+  color: #D9534F; /* Soft Red */
   font-size: 14px;
   margin-top: 10px;
 }
