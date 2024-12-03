@@ -134,7 +134,7 @@
 .chat_window .message .text_wrapper {
   font-family: 'Roboto', sans-serif;
   max-width: 85%; /* Aumenta el ancho máximo del mensaje */
-  padding: 25px; /* Incrementa el espacio interno */
+  padding: 19px; /* Incrementa el espacio interno */
   font-size: 19px; /* Aumenta el tamaño de la fuente */
   border-radius: 12px; /* Suaviza más los bordes */
   line-height: 1.5; /* Mejora la legibilidad */
@@ -156,7 +156,7 @@
   display: flex;
   align-items: center;
   border-top: 1px solid #c73c59; /* Fairy Tale */
-  background-color: #360303;
+  background-color: #8b469f;
   border-radius: 8px;
 }
 
