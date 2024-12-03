@@ -144,6 +144,12 @@
   color: #2c0202;
 }
 
+.chat_window .message.left .text_wrapper {
+  background: #c73c59; /* Verde */
+  color: #231010; /* Blanco */
+}
+
+
 .chat_window .bottom_wrapper {
   padding: 10px;
   display: flex;
